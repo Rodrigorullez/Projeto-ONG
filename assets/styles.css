@@ -70,3 +70,18 @@ body, h1, h2, p, li, nav a, footer{color:var(--text);text-shadow: none}
   /* Content box spacing on small screens */
   .content-box{padding:1rem;margin:1rem 0}
 }
+
+/* Hamburger menu styles */
+.hamburger{display:none;background:none;border:0;cursor:pointer;width:44px;height:44px;position:relative}
+.hamburger .bar{display:block;position:absolute;height:3px;width:22px;background:var(--text);left:11px;border-radius:2px;transition:transform 0.2s,opacity 0.2s}
+.hamburger .bar:nth-child(1){top:14px}
+.hamburger .bar:nth-child(2){top:20px}
+.hamburger .bar:nth-child(3){top:26px}
+
+@media (max-width:600px){
+  .hamburger{display:block}
+  nav ul{display:none}
+  header.open nav ul{display:flex;flex-direction:column;gap:0}
+  header.open nav{background:rgba(255,255,255,0.98);padding:0.5rem;border-radius:8px}
+  header.open nav a{padding:0.75rem 1rem}
+}
