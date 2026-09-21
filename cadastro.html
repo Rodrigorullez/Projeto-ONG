@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | ONG Esperança</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">ONG Esperança</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="margin-top:2rem;background:rgba(255,255,255,0.95);padding:2rem;border-radius:10px;">
+      <h1>Cadastro de Voluntário</h1>
+      <p>Preencha o formulário abaixo para se inscrever como voluntário.</p>
+      <form id="cadastroForm" action="#" method="post">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <label>
+            Nome completo<br>
+            <input type="text" name="nome" required style="width:100%;padding:0.5rem;border-radius:6px;border:1px solid #ccc">
+          </label>
+          <label>
+            E-mail<br>
+            <input type="email" name="email" required style="width:100%;padding:0.5rem;border-radius:6px;border:1px solid #ccc">
+          </label>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem;">
+          <label>
+            Telefone<br>
+            <input type="tel" name="telefone" style="width:100%;padding:0.5rem;border-radius:6px;border:1px solid #ccc">
+          </label>
+          <label>
+            Idade<br>
+            <input type="number" name="idade" min="14" style="width:100%;padding:0.5rem;border-radius:6px;border:1px solid #ccc">
+          </label>
+        </div>
+        <label style="display:block;margin-top:1rem;">
+          Mensagem / Interesse<br>
+          <textarea name="mensagem" rows="4" style="width:100%;padding:0.5rem;border-radius:6px;border:1px solid #ccc"></textarea>
+        </label>
+        <div style="margin-top:1rem;">
+          <button class="btn" type="submit">Enviar cadastro</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 ONG Esperança. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

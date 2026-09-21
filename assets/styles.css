@@ -1,0 +1,49 @@
+:root{
+  --max-width:1100px;
+  --accent:#2b9348;
+  --muted:rgba(0,0,0,0.55);
+  --text:#000000;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{
+  background: url('bg-ong.png') no-repeat center center fixed;
+  background-size:cover;
+  color:var(--text);
+}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.brand{font-weight:700;font-size:1.125rem;background:rgba(255,255,255,0.9);color:var(--text);padding:0.35rem 0.75rem;border-radius:8px}
+nav ul{display:flex;gap:0.5rem;list-style:none;padding:0;margin:0}
+nav a{display:inline-block;padding:0.5rem 0.85rem;border-radius:8px;background:rgba(255,255,255,0.85);color:var(--text);text-decoration:none;font-weight:600;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
+
+.hero{padding:3rem 0;}
+.hero-inner{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;background:rgba(255,255,255,0.85);padding:2rem;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.25)}
+.hero-text{flex:1;min-width:260px}
+.hero h1{font-size:2rem;margin:0 0 0.5rem}
+.hero p{margin:0 0 1rem;line-height:1.45;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:var(--text) !important;padding:0.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:700;text-shadow:none !important}
+.hero-image{flex:0 0 320px;max-width:100%;height:auto;border-radius:10px;object-fit:cover}
+
+/* content box used on pages like projetos.html */
+.content-box{background:rgba(255,255,255,0.85);padding:2rem 1rem;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.06);color:var(--text);margin:2rem 0}
+
+section#contato{margin:2rem 0;padding:1.25rem;background:rgba(255,255,255,0.9);border-radius:10px}
+section#contato h2{margin-top:0}
+
+footer{padding:1rem 0;color:rgba(0,0,0,0.7);text-align:center;margin-top:2rem}
+
+/* black text for readability */
+body, h1, h2, p, li, nav a, footer{color:var(--text);text-shadow: none}
+
+@media (min-width:900px){
+  .container{padding:0 1rem}
+  .hero-inner{padding:3rem}
+  .hero h1{font-size:2.5rem}
+  .content-box{padding:3rem}
+}
+@media (max-width:600px){
+  nav ul{flex-wrap:wrap;justify-content:flex-end}
+  .hero-inner{padding:1rem}
+  .hero-image{flex-basis:100%}
+}
